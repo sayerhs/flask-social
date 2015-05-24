@@ -11,6 +11,8 @@
 
 from __future__ import absolute_import
 
+from flask import current_app
+from flask_oauthlib.client import OAuthException
 import facebook
 
 config = {
@@ -44,6 +46,10 @@ def get_connection_values(response, **kwargs):
     if not response:
         return None
 
+    if isinstance(response,OAuthException):
+        current_app.logger.debug(response.message)
+        return None
+        
     access_token = response['access_token']
     graph = facebook.GraphAPI(access_token)
     profile = graph.get_object("me")
