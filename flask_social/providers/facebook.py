@@ -47,7 +47,7 @@ def get_connection_values(response, **kwargs):
         return None
 
     if isinstance(response,OAuthException):
-        current_app.logger.debug(response.message)
+        current_app.logger.error(response.message)
         return None
         
     access_token = response['access_token']
