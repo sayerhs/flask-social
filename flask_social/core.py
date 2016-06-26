@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask.ext.social.core
+    flask_social.core
     ~~~~~~~~~~~~~~~~~~~~~
 
     This module contains the Flask-Social core
@@ -12,7 +12,7 @@ from importlib import import_module
 
 from flask import current_app
 from flask_oauthlib.client import OAuthRemoteApp as BaseRemoteApp
-from flask.ext.security import current_user
+from flask_security import current_user
 from werkzeug.local import LocalProxy
 
 from .utils import get_config, update_recursive

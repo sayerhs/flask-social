@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask.ext.social.providers.google
+    flask_social.providers.google
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     This module contains the Flask-Social google code

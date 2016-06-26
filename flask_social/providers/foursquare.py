@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask.ext.social.providers.foursquare
+    flask_social.providers.foursquare
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     This module contains the Flask-Social foursquare code
